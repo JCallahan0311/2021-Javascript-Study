@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<br>
+<br>
+<input type="text" id="myText" value="">
+<br>
+<br>
+<button onclick="myFunction()" class="button">Button</button>
+
+<p id="123" class="abc"></p>
+
+<style>
+    .button{
+        display: block;
+        width: 75px;
+        height: 40x;
+        font-size: 18px;
+        text-align: center;
+    }
+    .abc{
+        font-size: 100px;
+    }
+</style>
+
+<script>
+
+
+    var num1 = 5;
+    var num2 = 13;
+    var sum = num1 + num2
+
+
+
+    var x = 0;
+
+    var y = 13;
+
+    function myFunction() {
+        x = document.getElementById("myText").value;
+
+        if(x == y){
+            document.getElementById("123").innerHTML = "Equal";
+        }
+        if(x != y){
+            document.getElementById("123").innerHTML = "Not Equal";
+        }
+    }
+</script>
+
+</body>
+</html>
