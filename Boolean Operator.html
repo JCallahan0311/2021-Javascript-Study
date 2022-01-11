@@ -11,37 +11,37 @@
         <h1>Add two number using text box as input using javascript</h1>
     </div>
     Enter First Number : <br>
-    <input type="text" id="Text1" name="TextBox1">
+    <label for="Text1"></label><input type="text" id="Text1" name="TextBox1">
     <br>
     Enter Second Number : <br>
-    <input type="text" id="Text2" name="TextBox2">
+    <label for="Text2"></label><input type="text" id="Text2" name="TextBox2">
     <br>
     Enter Third Number : <br>
-    <input type="text" id="Text3" name="TextBox3">
+    <label for="Text3"></label><input type="text" id="Text3" name="TextBox3">
     <br>
     Enter Fourth Number : <br>
-    <input type="text" id="Text4" name="TextBox4">
+    <label for="Text4"></label><input type="text" id="Text4" name="TextBox4">
     <br>
     Enter Fifth Number : <br>
-    <input type="text" id="Text5" name="TextBox5">
+    <label for="Text5"></label><input type="text" id="Text5" name="TextBox5">
     <br>
     Enter Sixth Number : <br>
-    <input type="text" id="Text6" name="TextBox6">
+    <label for="Text6"></label><input type="text" id="Text6" name="TextBox6">
     <br>
     Enter Seventh Number : <br>
-    <input type="text" id="Text7" name="TextBox7">
+    <label for="Text7"></label><input type="text" id="Text7" name="TextBox7">
     <br>
     Result : <br>
-    <p type="text" id="txtresult" name="TextBox3">----</p>
+    <p id="txtresult" class="txtresult">----</p>
     <br><br>
     <input type="button" name="clickbtn" value="Display Result" onclick="add_number()">
-
+</div>
 <script>
     var x = 7;
     var y = 20;
-    var z =
+    var z = 3;
 
-    if(x == y){
+    if(x === y + z){
         console.log("equals")
     }
 
@@ -56,9 +56,13 @@
         var g = parseInt(document.getElementById("Text7").value);
         var result = a + b + c + d + e + f + g;
 
+        if(a === ""){
+            a = 1;
+            result = a + b + c + d + e + f + g;
+        }
 
+        document.getElementById("txtresult").innerHTML = result;
     }
 </script>
-
 </body>
 </html>

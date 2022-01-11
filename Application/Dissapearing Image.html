@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disappearing Image</title>
+    <script>
+        function POOF() {
+            var image = document.getElementById("BEEPNOMORE");
+            image.style.display = "none";
+
+            var superimage = document.getElementById("BEEPBEEPBEEP");
+            superimage.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+<button type="button" onclick="POOF()">Cloaker Disappears</button>
+<img id="BEEPNOMORE" src="Russian_Cloaker.png" alt="" width="300">
+<img id="BEEPBEEPBEEP" src="1r3fn3-e1579990017466-1200x761.jpg" alt="" width="300" style="display: none">
+</body>
+</html>
